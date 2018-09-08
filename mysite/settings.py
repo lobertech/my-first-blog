@@ -25,7 +25,7 @@ SECRET_KEY = 's#1ae_p$)6+3r*20z+x=zo=o(kba65z$1tydp2q+kcunx0s2vb'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['lobertech.pythonanywhere.com']
 
 
 # Application definition
