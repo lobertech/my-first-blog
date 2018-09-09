@@ -7,16 +7,12 @@
             <h1><a href="">lobertech blog</a></h1>
         </div>
 
-        <div>
-            <p>published: 2018.09.09, 12:16</p>
-            <h2><a href="">My first post</a></h2>
-            <p>能显示中文么</p>
-        </div>
-
-        <div>
-            <p>published: 2018.09.09, 12:16</p>
-            <h2><a href="">My second post</a></h2>
-            <p>看看再说</p>
-        </div>
+        {% for post in posts %}
+            <div>
+                <p>published: {{ post.publish_date }}</p>
+                <h1><a href="">{{ post.title }}</a></h1>
+                <p>{{ post.text|linebreaksbr }}</p>
+            </div>
+        {% endfor %}
     </body>
 </html>
